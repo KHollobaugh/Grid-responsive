@@ -138,6 +138,7 @@
     img {
       max-width: 100%;
     }
+
     a {
       color: black;
       text-decoration: underline wavy var(--yellow);
@@ -148,6 +149,27 @@
       font-style: italic;
       font-weight: 100;
       margin: 0;
+    }
+
+    .post {
+        display: grid;
+        max-width: 1000px;
+        margin: 200px;
+        grid-template-columns: 3fr 12fr 5fr;
+        grid-gap: 10px 50px;
+    }
+
+    .post>* {
+        grid-column: 2 / -2;
+    }
+
+    .post>figure {
+        margin: 0;
+        grid-column: 1 / -1;
+    }
+
+    figcaption {
+        font-size: 10px;
     }
   </style>
 
