@@ -171,6 +171,31 @@
     figcaption {
         font-size: 10px;
     }
+
+    .post>blockquote {
+        grid-column:  1 / -1;
+        font-size: 60px;
+        font-style: italic;
+        text-align: center;
+        margin: 0;
+    }
+
+    .tip {
+        background: #fafafa;
+        padding: 10px;
+        align-self: start;
+    }
+
+    .tip-left {
+    grid-column: 1 / span 1;
+    text-align: right;
+    border-right: 2px solid olive;
+    }
+
+    .tip-right {
+        grid-column: span 1 / -1;
+        border-left: 2px solid olive;
+    }
   </style>
 
 </body>
